@@ -4,10 +4,11 @@ import org.openqa.selenium.By;
 
 public class FloresDeLujoPage {
 	
-	private static By txtBuscador = By.xpath("//input[@id=\"dgwt-wcas-search-input-2f60\"]");
+	private static By txtBuscador = By.xpath("//ul[@id='menu-menu-principal']//input[@placeholder='Buscar productos']");
 	private static By btnBuscador = By.xpath("//div[@class='dgwt-wcas-sf-wrapp']//button[@class='dgwt-wcas-search-submit']");
 	private static By btnProducto;
 	private static By lblProducto;
+	private static By btnVolver = By.xpath("//a[contains(text(),'Volver a la Tienda')]");
 	
 	public static By getBtnProducto() {
 		return btnProducto;
@@ -32,4 +33,8 @@ public class FloresDeLujoPage {
 	public static By getBtnBuscador() {
 		return btnBuscador;
 	}	
+	
+	public static By getBtnVolver() {
+		return btnVolver;
+	}
 }

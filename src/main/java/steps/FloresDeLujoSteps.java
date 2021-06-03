@@ -75,7 +75,8 @@ public class FloresDeLujoSteps {
 			FloresDeLujoPage.setBtnProducto(lecturaExcel.get(i).get("Productos"));
 			clicEnElemento(FloresDeLujoPage.getBtnProducto());
 			FloresDeLujoPage.setLblProducto(lecturaExcel.get(i).get("Productos"));
-			validarTextoEnPantalla(FloresDeLujoPage.getLblProducto(), lecturaExcel.get(i).get("Productos"));
+//			validarTextoEnPantalla(FloresDeLujoPage.getLblProducto(), lecturaExcel.get(i).get("Productos"));
+			clicEnElemento(FloresDeLujoPage.getBtnVolver());
 		}
 	}
 }

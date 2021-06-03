@@ -11,7 +11,7 @@ public class BuscadorFloresDeLujoStepDefinitions {
 	FloresDeLujoSteps floresSteps = new FloresDeLujoSteps();
 
 
-	@Given("^que me encuentro en la pagina de Flores de Lujo con la url https://floresdelujo\\.com\\.co/$")
+	@Given("^que me encuentro en la pagina de Flores de Lujo con la url (.*)$")
 	public void queMeEncuentroEnLaPaginaDeFloresDeLujoConLaUrlHttpsFloresdelujoComCo(String url) {
 		SeleniumWebDriver.ChromeWebDriver(url);
 	}
